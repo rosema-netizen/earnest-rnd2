@@ -1,1 +1,26 @@
 @import '../common-imports';
+
+.leadspace {
+    // &-bgimg{
+
+    // }
+    &-content {
+        max-width: 65rem;
+        padding-bottom: 10vh;
+        margin-top: 25.6rem;
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 22vh;
+        }
+    }
+    &-title {
+        border-bottom: 0.4rem solid $success;
+        @include media-breakpoint-up(xl) {
+            line-height: 7.5rem;
+        }
+    }
+    .btn {
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+    }
+}

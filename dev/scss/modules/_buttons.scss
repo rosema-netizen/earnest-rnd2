@@ -1,0 +1,23 @@
+.btn{
+    border-radius: 3rem;
+    border: 1px solid transparent;
+    padding: 1.2rem 3.2rem;
+    min-width: 2rem;
+    font-weight: bold;
+    &:hover{
+        border-color:transparent;
+    }
+    &-darkteal{
+        color: $white;
+        &:hover{
+            background-color: $lightteal;
+        }
+    }
+    &-white{
+        border-color: $grayneutraldark;
+        &:hover{
+        background-color: $grayneutral;
+        border-color: $primary;
+    }
+    }
+}
