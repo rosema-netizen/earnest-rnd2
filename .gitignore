@@ -75,3 +75,4 @@ typings/
 
 wp-config-local.php
 .history/
+node_modules
