@@ -1,5 +1,113 @@
 .#{$global} {
     &-header {
         background: $white;
+        .site-header {
+            z-index: 9999;
+        }
+        .navbar {
+            &-brand {
+                svg {
+                    width: 13.5rem;
+                    @include media-breakpoint-up(lg) {
+                        width: 17.5rem;
+                    }
+                    .er-logo {
+                        fill: $darkteal;
+                    }
+                }
+                &--offcanvas {
+                    svg {
+                        .er-logo {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+            &-burger {
+                background: $black;
+                height: 0.25rem;
+                width: 2.4rem;
+                display: block;
+                margin-bottom: 1.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .nav-item {
+                font-size: 2rem;
+            }
+            .dropdown {
+                &-menu {
+                    border-radius: 0 0 1.2rem 1.2rem;
+                    &.show {
+                        box-shadow: 0 241vh 0 241vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
+                    }
+                    @include media-breakpoint-up(lg) {
+                        top: 106.5%;
+                    }
+                    // &::after{
+                    //     content: " ";
+                    //     background-color: rgba($black,.5);
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     position: absolute;
+                    // }
+
+                    &--card {
+                        width: 50vw;
+                    }
+                }
+                &-item {
+                    font-family: $font-family-serif;
+                    font-size: 2rem;
+                    font-weight: $font-weight-light;
+                    &:hover {
+                        color: $primary;
+                        background-color: $grayneutral;
+                    }
+                }
+            }
+            .nav-card {
+                border-radius: 1.2rem;
+                &__body,
+                &__link {
+                    font-size: 1.4rem;
+                    line-height: 2.1rem;
+                }
+                &::after {
+                    content: $icon-right-circle;
+                    font-family: $icomoon-font-family;
+                    font-size: 3.2rem;
+                    position: absolute;
+                    width: 3.2rem;
+                    right: 1.6rem;
+                    bottom: 1.6rem;
+                    aspect-ratio: 1;
+                    background-size: contain;
+                }
+                &:hover {
+                    border-color: $black !important;
+                    &::after {
+                        color: $darkteal;
+                    }
+                }
+            }
+        }
+        .offcanvas{
+            .accordion-button{
+                box-shadow: none;
+                &::after{
+                    color: $white;
+                }
+            }
+        }
+        .btn {
+            &--small {
+                padding: 0.5rem 1.8rem;
+                @include media-breakpoint-down(md) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
