@@ -103,7 +103,7 @@
         }
         .btn {
             &--small {
-                padding: 0.5rem 1.8rem;
+                padding: 1.2rem 2rem;
                 @include media-breakpoint-down(md) {
                     font-size: 1.2rem;
                 }
