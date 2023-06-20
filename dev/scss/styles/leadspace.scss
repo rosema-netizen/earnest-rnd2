@@ -1,21 +1,30 @@
 @import '../common-imports';
 
 .leadspace {
-    // &-bgimg{
-
-    // }
+    &-wrapper{
+        height: calc(100vh - 13.3rem)
+    }
     &-content {
         max-width: 65rem;
         padding-bottom: 10vh;
         margin-top: 25.6rem;
+        box-shadow: 1px 0 42px 54px hsla(180,8%,97%,.6);
+        background-color: rgb(255 255 255 / 60%);
         @include media-breakpoint-up(xl) {
             padding-bottom: 22vh;
         }
     }
     &-title {
         border-bottom: 0.4rem solid $success;
-        @include media-breakpoint-up(xl) {
-            line-height: 7.5rem;
+    }
+    &-subtitle{
+        font-size: 1.8rem;
+        line-height:3.2rem;
+        @include media-breakpoint-up(md){
+            font-size: 2rem;
+        }
+        @include media-breakpoint-up(xl){
+            font-size: 2.4rem;
         }
     }
     .btn {
@@ -23,4 +32,5 @@
             width: 100%;
         }
     }
+
 }

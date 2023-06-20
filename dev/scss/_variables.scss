@@ -50,6 +50,7 @@ $darkteal:    #004d47!default;
 $lightteal:#4c827d !default;
 $grayneutral: #edeff0 !default;
 $grayneutraldark : #a9aeb1 !default;
+$textblack : #0B0B0C !default;
 $cyan:    #000000 !default;
 // scss-docs-end color-variables
 
@@ -68,6 +69,7 @@ $colors: (
   "grayneutral":  $grayneutral,
   "grayneutraldark":  $grayneutraldark,
   "darkteal":  $darkteal,
+  "textblack":  $textblack,
   "cyan":       $cyan,
   "black":      $black,
   "moss":       $moss,
@@ -323,6 +325,7 @@ $theme-colors: (
   "primary":    $primary,
   "secondary":  $lightteal,
   "darkteal":   $darkteal,
+  "textblack":   $textblack,
   "neutral":    $grayneutral,
   "neutraldark":    $grayneutraldark,
   "success":    $success,
@@ -384,19 +387,25 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
+$spacer: 4rem !default;
 $spacers: (
-  0: 16px,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 2.5,
-  7: $spacer * 3,
-  8: $spacer * 3.5,
-  9: $spacer * 4,
-  10: $spacer * 4.5,
+  0: 0,
+  1: $spacer * .1,
+  2: $spacer * .2,
+  3: $spacer * .3,
+  4: $spacer * .4,
+  5: $spacer * .5,
+  6: $spacer * .6,
+  7: $spacer * .7,
+  8: $spacer * .8,
+  9: $spacer * .9,
+  10: $spacer * 1,
+  11: $spacer * 1.1,
+  12: $spacer * 1.2,
+  13: $spacer * 1.3,
+  14: $spacer * 1.4,
+  15: $spacer * 1.5,
+  16: $spacer * 1.6,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -481,7 +490,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           3rem !default;
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -574,6 +583,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
