@@ -1,0 +1,21 @@
+@import '../common-imports';
+
+.img-content-50-50 {
+    &__wrapper {
+        @include media-breakpoint-up(md){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    }
+    &__text{
+        max-width: 48rem;
+    }
+    .btn{
+        @include media-breakpoint-down(sm){
+            font-size: 1.4rem;
+            line-height: 2rem;
+            
+        }
+    }
+}
