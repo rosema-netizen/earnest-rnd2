@@ -108,6 +108,10 @@ h6,
         font-size: 1.8rem;
         line-height: 2.7rem;
         font-weight: $font-weight-bold;
+        padding: 1rem 1.6rem;
+        @include media-breakpoint-up(md) {
+            padding: 1.2rem 3.2rem;
+        }
 }
 
 a {
