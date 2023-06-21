@@ -1,22 +1,36 @@
-.btn{
+.btn {
     border-radius: 3rem;
     border: 1px solid transparent;
+    padding: 1rem 1.6rem;
+    @include media-breakpoint-up(md) {
     padding: 1.2rem 3.2rem;
-    min-width: 2rem;
-    &:hover{
-        border-color:transparent;
+    min-width: 21.8rem;
     }
-    &-darkteal{
+    &--small {
+        @include media-breakpoint-down(md) {
+            font-size: 1.2rem;
+        }
+    }
+    &:hover {
+        border-color: transparent;
+    }
+    &-darkteal {
         color: $white;
-        &:hover{
+        &:hover {
             background-color: $lightteal;
         }
     }
-    &-white{
+    &-white {
         border-color: $grayneutraldark;
-        &:hover{
-        background-color: $grayneutral;
-        border-color: $primary;
-    }
+        background: $white;Z
+        &:hover {
+            background-color: $grayneutral;
+            border-color: $primary;
+        }
+        &-transparent {
+            &:hover {
+                background-color: rgba($white, 0.5);
+            }
+        }
     }
 }
