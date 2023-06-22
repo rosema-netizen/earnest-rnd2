@@ -1,0 +1,18 @@
+@import '../common-imports';
+
+.img-card-grid {
+    background: url(../images/background_dot.svg);
+    background-size: 1.7rem;
+    h2,h5{
+        font-family: $font-family-sans-serif;
+    }
+}
+
+.card-2 {
+    &__img {
+            img {
+            border-radius: 50%;
+            aspect-ratio: 1;
+        }
+    }
+}
