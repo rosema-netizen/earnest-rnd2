@@ -3,6 +3,9 @@
 .img-card-grid {
     background: url(../images/background_dot.svg);
     background-size: 1.7rem;
+    @include media-breakpoint-up(md){
+        margin-top: 11.2rem;
+    }
     h2,h5{
         font-family: $font-family-sans-serif;
     }

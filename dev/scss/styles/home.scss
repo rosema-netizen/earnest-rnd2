@@ -1,0 +1,10 @@
+@import '../common-imports';
+
+
+
+.align-wide{
+    width: 100vw;
+    @include media-breakpoint-up(md) {
+        width: calc(100vw - 6.4rem);
+    }
+}
