@@ -53,6 +53,8 @@ $grayneutraldark : #a9aeb1 !default;
 $textblack : #0B0B0C !default;
 $cyan:    #000000 !default;
 $navyblue:    #091e3e !default;
+$lightestteal:    #f8f9f9 !default;
+
 
 
 // scss-docs-end color-variables
@@ -68,6 +70,7 @@ $colors: (
   "yellow":     $yellow,
   "green":      $green,
   "teal":       $teal,
+  "lightestteal":  $lightteal,
   "lightteal":  $lightteal,
   "grayneutral":  $grayneutral,
   "grayneutraldark":  $grayneutraldark,
