@@ -1,0 +1,68 @@
+@import '../common-imports';
+@import '../vendors/icons/variables/variables';
+@import '../vendors/icons/icons.scss';
+
+.how-we-help{
+    .tab{
+        &-content{
+            @include media-breakpoint-up(lg){
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        &-pane{
+            border-radius: 0 2rem 2rem;
+            @include media-breakpoint-up(lg){
+                border-radius:0;
+                display: block;
+            }
+            &:first-child{
+                border-bottom-left-radius: 2rem;
+            }
+            &:last-child{
+                border-bottom-right-radius: 2rem;
+            }
+
+        }
+    }
+    .nav{
+        &-link{
+            background: transparent;
+            font-size: 1.2rem;
+            &.active{
+                background: rgba($teal, 0.5);
+                border-radius: 1rem 1rem 0 0;
+                border: solid 0.1rem $teal;
+            }
+        }
+    }
+    &__img{
+        border-radius: 2rem 2rem 0 0;
+        @include media-breakpoint-up(lg){
+             border-top-left-radius: 0;
+        }
+        img{
+            min-height: 15rem;
+            max-height: 20rem;
+            @include media-breakpoint-up(lg){
+                max-height: 25rem;
+            }
+        }
+        &-wrapper{
+            @include media-breakpoint-up(lg){
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
+    &__title{
+        background:rgba($primary, 0.5);
+        @include media-breakpoint-down(lg){
+        position: absolute;
+    }
+    @include media-breakpoint-up(lg){
+        border-top-left-radius: 2rem;
+    }
+    }
+}
+

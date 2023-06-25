@@ -366,3 +366,15 @@ ul {
         background-blend-mode: difference;
     }
 }
+
+.tick-list{
+    li{
+        &::before{
+            content: $icon-tick-circle;
+            font-family: $icomoon-font-family;
+            margin-right: 1.6rem;
+            font-size: 3.2rem;
+            color: $moss;
+        }
+    }
+}
