@@ -1,8 +1,6 @@
 @import '../common-imports';
 
 .img-card-grid {
-    background: url(../images/background_dot.svg);
-    background-size: 1.7rem;
     @include media-breakpoint-up(md){
         margin-top: 11.2rem;
     }

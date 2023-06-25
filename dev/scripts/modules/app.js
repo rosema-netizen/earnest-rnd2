@@ -72,10 +72,10 @@ var swiper = new Swiper(".insightsSwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     breakpoints: {
         "@0.00": {
           slidesPerView: 1,
@@ -89,5 +89,16 @@ var swiper = new Swiper(".insightsSwiper", {
           slidesPerView: 3,
           spaceBetween: 30,
         }
+      },
+  });
+
+
+  var swiper = new Swiper(".testimonialSlider", {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+       pagination: {
+        el: ".swiper-pagination",
       },
   });

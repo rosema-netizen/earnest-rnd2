@@ -358,3 +358,11 @@ ul {
         }
     }
 }
+
+.bg-dotted{
+    background: url(../images/background_dot.svg);
+    background-size: 1.7rem;
+    &--lighter{
+        background-blend-mode: difference;
+    }
+}
