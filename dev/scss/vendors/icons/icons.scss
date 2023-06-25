@@ -26,18 +26,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-left-circle {
+  &::before {
+    content: $icon-left-circle; 
+  }
+}
+.icon-arrow-up {
+  &::before {
+    content: $icon-arrow-up; 
+  }
+}
+.icon-arrow-left-fill {
+  &::before {
+    content: $icon-arrow-left-fill; 
+  }
+}
+.icon-arrow-down {
+  &::before {
+    content: $icon-arrow-down; 
+  }
+}
+.icon-arrow-right-fill {
+  &::before {
+    content: $icon-arrow-right-fill; 
+  }
+}
+.icon-arrow-right {
+  &::before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
+  }
+}
 .icon-close {
-    &:before {
-      content: $icon-close; 
-    }
+  &:before {
+    content: $icon-close; 
   }
-  .icon-tick-circle {
-    &:before {
-      content: $icon-tick-circle; 
-    }
+}
+.icon-tick-circle {
+  &:before {
+    content: $icon-tick-circle; 
   }
-  .icon-right-circle {
-    &:before {
-      content: $icon-right-circle; 
-    }
+}
+.icon-right-circle {
+  &:before {
+    content: $icon-right-circle; 
   }
+}
+

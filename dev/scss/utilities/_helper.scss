@@ -18,7 +18,7 @@
 
         &::after {
             content: '' !important;
-            background-color: $primary !important;
+            background-color: $teal !important;
             width: 100% !important;
             height: rem(2px) !important;
             position: absolute !important;
@@ -44,7 +44,7 @@
             content: " ";
             transform: scaleX(0);
             transform-origin: bottom right;
-            background-color: $primary;
+            background-color: $teal;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -54,7 +54,7 @@
             transition: transform 0.5s ease;
           }
           &:hover{
-            color: $primary;
+            color: $teal;
                 &::before {
                     transform: scaleX(1);
                     transform-origin: bottom left;
@@ -338,7 +338,7 @@ ul {
         bottom: 0;
         height: rem(74px);
         width: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 43, 73, 0), $primary);
+        background-image: linear-gradient(to bottom, rgba(0, 43, 73, 0), $teal);
         @include media-breakpoint-up(md) {
             display: none;
         }

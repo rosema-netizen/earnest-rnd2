@@ -1,5 +1,14 @@
 @import './common-imports';
 
+// Utilities
+@import './vendors/icons/variables/variables';
+@import './vendors/icons/icons.scss';
+
+
+
+// Home
+@import './styles/home';
+
 // Leadspace
 @import './styles/leadspace';
 
@@ -14,3 +23,6 @@
 
 // partners grid
 @import './styles/partners-grid';
+
+// Img card grid
+@import './styles/insights';

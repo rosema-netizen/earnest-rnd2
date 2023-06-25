@@ -14,7 +14,7 @@
     &:hover {
         border-color: transparent;
     }
-    &-darkteal {
+    &-teal {
         color: $white;
         &:hover {
             background-color: $lightteal;
@@ -25,7 +25,7 @@
         background: $white;Z
         &:hover {
             background-color: $grayneutral;
-            border-color: $primary;
+            border-color: $teal;
         }
         &-transparent {
             &:hover {
