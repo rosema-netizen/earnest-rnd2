@@ -41,5 +41,21 @@
                 }
             }
         }
+        &__footnote{
+           &-wrapper{
+            @include media-breakpoint-up(lg){
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            }
+           }
+        }
+        &__info{
+            grid-column: 1/ span 2;
+        }
+        &__nav{
+
+    grid-column: span 4;
+
+        }
     }
 }

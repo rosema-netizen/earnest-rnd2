@@ -55,6 +55,7 @@ $grayneutral: #edeff0 !default;
 $grayneutraldark : #a9aeb1 !default;
 $textblack : #0B0B0C !default;
 $cyan:    #000000 !default;
+$lightcyanblue:    #e5e7eb !default;
 $navyblue:    #091e3e !default;
 $lightestteal:    #f8f9f9 !default;
 
@@ -76,6 +77,7 @@ $colors: (
   "lightestteal":  $lightteal,
   "mint":       $mint,
   "offwhite" : $offwhite,
+  "lightcyanblue" : $lightcyanblue,
   "lightteal":  $lightteal,
   "grayneutral":  $grayneutral,
   "grayneutraldark":  $grayneutraldark,
@@ -331,6 +333,8 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $offwhite:        $offwhite !default;
 $mint:         $mint !default;
+
+$lightcyanblue:         $lightcyanblue!default;
 $verydarkteal:         $verydarkteal!default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -348,6 +352,7 @@ $theme-colors: (
   "navyblue":   $navyblue,
   "success":    $success,
   "offwhite":   $offwhite,
+  "lightcyanblue":   $lightcyanblue,
   "verydarkteal":   $verydarkteal,
   "info":       $info,
   "mint":       $mint,

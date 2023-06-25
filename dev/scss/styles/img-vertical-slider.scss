@@ -1,0 +1,22 @@
+@import '../common-imports';
+
+.img-vertical-slider{
+    &__img ,
+    &__content{
+        @include media-breakpoint-up(lg){
+            width: 50%;
+        }
+    }
+    &__img{
+        border-radius: 2rem 2rem 0 0;
+        @include media-breakpoint-up(lg){
+            border-radius: 2rem 0 0 2rem;
+        }
+    }
+    &__content{
+        border-radius: 0 0 2rem 2rem;
+        @include media-breakpoint-up(lg){
+            border-radius: 0 2rem 2rem 0;
+        }
+    }
+}
