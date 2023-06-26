@@ -1,0 +1,12 @@
+
+.card-a02{
+    min-height: 48.2rem;
+    &__title{
+        font-family: $font-family-sans-serif;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    &__figure{
+        max-height: 20rem;
+    }
+}
