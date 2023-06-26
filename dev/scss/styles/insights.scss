@@ -19,6 +19,14 @@
             height: 2rem;
             margin: 1.2rem 0.4rem;
         }
+        &:hover{
+            background: rgba($primary, 0.15);
+        }
+    }
+    .swiper-slide{
+        &:hover{
+            border: solid 0.1rem $lightcyanblue;
+        }
     }
 
     .swiper-button-prev{
