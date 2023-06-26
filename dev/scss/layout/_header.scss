@@ -35,16 +35,19 @@
             }
             .nav-item {
                 font-size: 2rem;
+                transition: all 0.3s ease;
+                &:hover{
+                    .dropdown-menu{
+                        display: block;
+                        top: 100.5%;
+                    }
+                }
             }
             .dropdown {
                 &-menu {
                     border-radius: 0 0 1.2rem 1.2rem;
-                    &.show {
-                        box-shadow: 0 241vh 0 241vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
-                    }
-                    @include media-breakpoint-up(lg) {
-                        top: 106.5%;
-                    }
+                    box-shadow: 0 241vh 0 241vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
+                    @extend .transition-fast;
 
                     &--card {
                         width: 50vw;
@@ -70,6 +73,7 @@
                 &::after {
                     content: $icon-right-circle;
                     font-family: $icomoon-font-family;
+                    color: $primary;
                     font-size: 3.2rem;
                     position: absolute;
                     width: 3.2rem;
@@ -81,7 +85,10 @@
                 &:hover {
                     border-color: $black !important;
                     &::after {
-                        color: $teal;
+                        content: $icon-arrow-right-fill;
+                        font-family: $icomoon-font-family;
+                        color: $primary;
+
                     }
                 }
             }

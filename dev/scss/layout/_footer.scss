@@ -1,61 +1,79 @@
 .#{$global} {
     &-footer {
         padding: rem(30px 0);
-        &__logo{
-            @include media-breakpoint-up(md){
+
+        &__logo {
+            @include media-breakpoint-up(md) {
                 max-width: 31.9rem;
             }
         }
-        &__menu{
+
+        &__menu {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-auto-columns: 1fr;
-            @include media-breakpoint-up(lg){
-                grid-template-columns: repeat(6,1fr);
+
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(6, 1fr);
             }
-            .h2{
+
+            .h2 {
                 font-size: 2.4rem;
                 line-height: 3rem;
             }
         }
-        &__item{
-            &:last-child{
+
+        &__item {
+            &:last-child {
                 grid-column: span 2;
             }
-             a{
+
+            a {
                 font-size: 1.6rem;
             }
         }
-        &__form{
-            .form-label{
+
+        &__form {
+            .form-label {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
-                .h4{
+
+                .h4 {
                     font-size: 2.2rem;
                 }
             }
-            .form-description{
-                p,a{
+
+            .form-description {
+
+                p,
+                a {
                     font-size: 1.2rem;
                     line-height: 1.6rem;
                 }
             }
         }
-        &__footnote{
-           &-wrapper{
-            @include media-breakpoint-up(lg){
-            display: grid;
-            grid-template-columns: repeat(8,1fr);
+
+        &__footnote {
+            &-wrapper {
+                @include media-breakpoint-up(lg) {
+                    display: grid;
+                    grid-template-columns: repeat(8, 1fr);
+                }
             }
-           }
         }
-        &__info{
-            grid-column: 1/ span 2;
+
+        &__info {
+            grid-column: 1 / span 2;
         }
-        &__nav{
 
-    grid-column: span 4;
+        &__nav {
+            grid-column: span 4;
+        }
 
+        a {
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
